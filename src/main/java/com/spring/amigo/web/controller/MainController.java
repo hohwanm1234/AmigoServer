@@ -21,7 +21,7 @@ public class MainController {
 
     @GetMapping("")
     public ModelAndView home(){
-        ModelAndView mv = new ModelAndView("home");     //View page Name
+        ModelAndView mv = new ModelAndView("login");     //View page Name
         mv.addObject("param","param1");     // param Name
         return mv;
     }
