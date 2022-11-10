@@ -33,6 +33,13 @@ public class MainController {
         return mv;
     }
 
+    @GetMapping("notice")
+    public ModelAndView notice(){
+        ModelAndView mv = new ModelAndView("tables");     //View page Name
+        mv.addObject("param","param1");     // param Name
+        return mv;
+    }
+
     @PostMapping("getAll.do")
     public ModelAndView getAll(HttpServletRequest httpServletRequest){
         ModelAndView mv = new ModelAndView("JsonView");
