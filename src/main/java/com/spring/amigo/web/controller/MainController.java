@@ -26,9 +26,16 @@ public class MainController {
         return mv;
     }
 
-    @GetMapping("index")
-    public ModelAndView index(){
-        ModelAndView mv = new ModelAndView("index");     //View page Name
+    @GetMapping("dashboard")
+    public ModelAndView dashboard(){
+        ModelAndView mv = new ModelAndView("dashboard");     //View page Name
+        mv.addObject("param","param1");     // param Name
+        return mv;
+    }
+
+    @GetMapping("notice")
+    public ModelAndView notice(){
+        ModelAndView mv = new ModelAndView("notice");     //View page Name
         mv.addObject("param","param1");     // param Name
         return mv;
     }
